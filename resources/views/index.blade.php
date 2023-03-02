@@ -38,6 +38,7 @@
             opacity: 0.8;
             box-shadow: 0px 0px 5px 8px rgba(0,0,0,0.08);
         }
+
     </style>
 </head>
 <!-- Navbar -->
@@ -56,7 +57,7 @@
                     <a class="nav-link active" aria-current="page" href="/">Beranda</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">Yuk Wakaf</a>
+                    <a class="nav-link" href=https://wa.link/nzkkz3">Yuk Wakaf</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="http://ppdb.bintangjuara.sch.id/" target="_blank">PPDB</a>
@@ -128,84 +129,115 @@
             <div class="row g-3">
                 <div class="col-12 col-md-6 col-lg-3">
                 <h4 align="center">Kegiatan</h4>
-          <div class="card">
-            <img src="assets/dummy.jpeg" class="card-img-top" alt="events">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text" align="justify">Some quick example text to build on the card title and make up the
-                bulk of the card's content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">An item</li>
-              <li class="list-group-item">A second item</li>
-              <li class="list-group-item">A third item</li>
-            </ul>
-            <div class="card-body">
-              <button type="button" class="btn btn-outline-secondary">Selengkapnya</button>
-            </div>
+              <div class="card">
+                  @forelse ($kegiatanPaudPrioritas as $row)
+                      <img src="{{$row['gambar_pengumuman']}}" class="card-img-top" alt="events" height="250">
+                  @empty
+                  @endforelse
+
+                  @forelse ($kegiatanPaud as $row)
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                              <a  href="#" style="text-decoration: none;">
+                                  <h6 class="card-title text-black" >{{$row['judul']}}</h6>
+                              </a>
+                          </li>
+                      </ul>
+                  @empty
+                  @endforelse
+                  <div class="card-body">
+                      <button type="button" class="btn btn-outline-secondary">
+                          <a class="text-black" href="http://paud-bintangjuara.test/" style="text-decoration: none;">
+                              Selengkapnya
+                          </a>
+                      </button>
+                  </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                 <h4 align="center">Berita</h4>
-          <div class="card">
-            <img src="assets/dummy.jpeg" class="card-img-top" alt="events">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text" align="justify">Some quick example text to build on the card title and make up the
-                bulk of the card's content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">An item</li>
-              <li class="list-group-item">A second item</li>
-              <li class="list-group-item">A third item</li>
-            </ul>
-            <div class="card-body">
-              <button type="button" class="btn btn-outline-secondary">Selengkapnya</button>
-            </div>
+              <div class="card">
+                  @forelse ($beritaPaudPrioritas as $row)
+                      <img src="{{$row['gambar_pengumuman']}}" class="card-img-top" alt="events" height="250">
+                  @empty
+                  @endforelse
+
+                  @forelse ($beritaPaud as $row)
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                              <a  href="#" style="text-decoration: none;">
+                                  <h6 class="card-title text-black" >{{$row['judul']}}</h6>
+                              </a>
+                          </li>
+                      </ul>
+                  @empty
+                  @endforelse
+                  <div class="card-body">
+                      <button type="button" class="btn btn-outline-secondary">
+                          <a class="text-black" href="http://paud-bintangjuara.test/" style="text-decoration: none;">
+                              Selengkapnya
+                          </a>
+                      </button>
+                  </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                 <h4 align="center">Artikel</h4>
-          <div class="card">
-            <img src="assets/dummy.jpeg" class="card-img-top" alt="events">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text" align="justify">Some quick example text to build on the card title and make up the
-                bulk of the card's content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">An item</li>
-              <li class="list-group-item">A second item</li>
-              <li class="list-group-item">A third item</li>
-            </ul>
-            <div class="card-body">
-              <button type="button" class="btn btn-outline-secondary">Selengkapnya</button>
-            </div>
+              <div class="card">
+                  @forelse ($artikelPaudPrioritas as $row)
+                      <img src="{{$row['gambar_pengumuman']}}" class="card-img-top" alt="events" height="250">
+                  @empty
+                  @endforelse
+
+                  @forelse ($artikelPaud as $row)
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                              <a  href="#" style="text-decoration: none;">
+                                  <h6 class="card-title text-black" >{{$row['judul']}}</h6>
+                              </a>
+                          </li>
+                      </ul>
+                  @empty
+                  @endforelse
+                  <div class="card-body">
+                      <button type="button" class="btn btn-outline-secondary">
+                          <a class="text-black" href="http://paud-bintangjuara.test/" style="text-decoration: none;">
+                              Selengkapnya
+                          </a>
+                      </button>
+                  </div>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-3">
                 <h4 align="center">Pengumuman</h4>
-          <div class="card">
-            <img src="assets/dummy.jpeg" class="card-img-top" alt="events">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text" align="justify">Some quick example text to build on the card title and make up the
-                bulk of the card's content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">An item</li>
-              <li class="list-group-item">A second item</li>
-              <li class="list-group-item">A third item</li>
-            </ul>
-            <div class="card-body">
-              <button type="button" class="btn btn-outline-secondary">Selengkapnya</button>
-            </div>
+                    <div class="card">
+                        @forelse ($pengumumanPaudPrioritas as $row)
+                            <img src="{{$row['gambar_pengumuman']}}" class="card-img-top" alt="events" height="250">
+                        @empty
+                        @endforelse
+
+                        @forelse ($pengumumanPaud as $row)
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <a  href="#" style="text-decoration: none;">
+                                        <h6 class="card-title text-black" >{{$row['judul']}}</h6>
+                                    </a>
+                                </li>
+                            </ul>
+                        @empty
+                        @endforelse
+                        <div class="card-body">
+                            <button type="button" class="btn btn-outline-secondary">
+                                <a class="text-black" href="http://paud-bintangjuara.test/" style="text-decoration: none;">
+                                    Selengkapnya
+                                </a>
+                            </button>
+                        </div>
                     </div>
                 </div>
-
-            </div>
         </div>
+    </div>
     </div>
 </section><br><br>
 <!-- Akhir Events, News, Videos -->
@@ -279,7 +311,7 @@
                     </div>
                     <div class="col-9">
                         <div class="main-scroll-div">
-                            
+
                             <div class="cover">
                             <div class="scroll-images">
                                 <div class="child"><img class="child-img" src="assets/1.png" alt="image" /></div>
@@ -291,11 +323,12 @@
                                 <div class="child"><img class="child-img" src="assets/7.png" alt="image" /></div>
                                 <div class="child"><img class="child-img" src="assets/8.png" alt="image" /></div>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
     <!-- Akhir Gallery -->
