@@ -101,11 +101,11 @@
     </li>
   </ul>
   <!-- Tabs navs -->
-  
+
   <!-- Tabs content -->
   <div class="tab-content">
     <div class="tab-pane active" id="tab-1" role="tabpanel">
-        <div class="row mt-3 g-3">                
+        <div class="row mt-3 g-3">
         <div class="col-12 col-md-6 col-lg-5">
             <img src="{{asset('assets/gedung1.jpg')}}" class="img-fluid" alt="bg">
         </div>
@@ -138,111 +138,18 @@
             <div class="row g-3">
                 <div class="col-12 col-md-6 col-lg-3">
                     <h4 align="center">Kegiatan</h4>
-                    <div class="card">
-                        @forelse ($kegiatanPrioritas as $row)
-                            <img src="{{asset('uploads/'.$row->gambar_artikel) }}" class="card-img-top" alt="events" height="250">
-                        @empty
-                        @endforelse
-
-                        @forelse ($kegiatan as $row)
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                    <a  href="{{route('detail-kegiatan', $row->slug)}}" style="text-decoration: none;">
-                                        <h6 class="card-title text-black" >{{$row->judul}}</h6>
-                                    </a>
-                                </li>
-                            </ul>
-                        @empty
-                        @endforelse
-                        <div class="card-body">
-                            <button type="button" class="btn btn-outline-secondary">
-                                <a class="text-black" href="{{'daftar-kegiatan'}}" style="text-decoration: none;">
-                                    Selengkapnya
-                                </a>
-                            </button>
-                        </div>
-                    </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <h4 align="center">Berita</h4>
-                    <div class="card">
-                        @forelse ($beritaPrioritas as $row)
-                            <img src="{{asset('uploads/'.$row->gambar_berita) }}" class="card-img-top" alt="events" height="250">
-                        @empty
-                        @endforelse
 
-                        @forelse ($berita as $row)
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                    <a  href="{{route('detail-berita', $row->slug)}}" style="text-decoration: none;">
-                                        <h6 class="card-title text-black" >{{$row->judul}}</h6>
-                                    </a>
-                                </li>
-                            </ul>
-                        @empty
-                        @endforelse
-                        <div class="card-body">
-                            <button type="button" class="btn btn-outline-secondary">
-                                <a class="text-black" href="{{'daftar-berita'}}" style="text-decoration: none;">
-                                    Selengkapnya
-                                </a>
-                            </button>
-                        </div>
-                    </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <h4 align="center">Artikel</h4>
-                    <div class="card">
-                        @forelse ($artikelPrioritas as $row)
-                            <img src="{{asset('uploads/'.$row->gambar_artikel) }}" class="card-img-top" alt="events" height="250">
-                        @empty
-                        @endforelse
-                        @forelse ($artikel as $row)
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                    <a href="{{route('detail-artikel', $row->slug)}}" style="text-decoration: none;">
-                                        <h6 class="card-title text-black">{{$row->judul}}</h6>
-                                    </a>
-                                </li>
-                            </ul>
-                        @empty
-                        @endforelse
-                        <div class="card-body">
-                            <button type="button" class="btn btn-outline-secondary">
-                                <a class="text-black" href="{{'daftar-artikel'}}" style="text-decoration: none;">
-                                    Selengkapnya
-                                </a>
-                            </button>
-                        </div>
-                    </div>
+
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-3">
                     <h4 align="center">Pengumuman</h4>
-                    <div class="card">
-                        @forelse ($pengumumanPrioritas as $row)
-                            <img src="{{asset('uploads/'.$row->gambar_pengumuman) }}" class="card-img-top" alt="events" height="250">
-                        @empty
-                        @endforelse
-
-                        @forelse ($pengumuman as $row)
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                    <a  href="{{route('detail-pengumuman', $row->slug)}}" style="text-decoration: none;">
-                                        <h6 class="card-title text-black" >{{$row->judul}}</h6>
-                                    </a>
-                                </li>
-                            </ul>
-                        @empty
-                        @endforelse
-                        <div class="card-body">
-                            <button type="button" class="btn btn-outline-secondary">
-                                <a class="text-black" href="{{'daftar-pengumuman'}}" style="text-decoration: none;">
-                                    Selengkapnya
-                                </a>
-                            </button>
-                        </div>
-                    </div>
                 </div>
 
             </div>
