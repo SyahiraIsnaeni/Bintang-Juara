@@ -58,10 +58,10 @@
 
                 <div class="row">
                     <p>
-                        <a href="{{route('beranda')}}" style="text-decoration: none;">
+                        <a href="{{'/'}}" style="text-decoration: none;">
                             <strong class="text-white">Home</strong>
                         </a>  .
-                        <a href="{{route('beranda')}}#kontak" style="text-decoration: none;">
+                        <a href="{{'/'}}#kontak" style="text-decoration: none;">
                             <strong class="text-white">Kontak Kami</strong>
                         </a>
                     </p>

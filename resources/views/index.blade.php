@@ -72,7 +72,7 @@
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="{{asset('assets/BintangJuara.png')}}" class="img-fluid" alt="bg">
+          <img src="{{asset('assets/BintangJuara.png')}}" class="child-img" alt="bg">
         </div>
       </div>
     </div>
@@ -269,9 +269,36 @@
 
     <!-- Akhir Lebih Dekat -->
 
-   <!-- gallery -->
-
-   <!-- Akhir gallery -->
+   <!-- Gallery -->
+   <section id="lainya"  class="mt-5 mb-5">
+        <div class="container mt-5 mb-5" >
+            <div class="slide-container-swiper mt-5 mb-5">
+                <div class="row">
+                    <div class="col-3">
+                        <h2><b>Galeri</b></h2>
+                    </div>
+                    <div class="col-9">
+                        <div class="main-scroll-div">
+                            
+                            <div class="cover">
+                            <div class="scroll-images">
+                                <div class="child"><img class="child-img" src="assets/1.png" alt="image" /></div>
+                                <div class="child"><img class="child-img" src="assets/2.png" alt="image" /></div>
+                                <div class="child"><img class="child-img" src="assets/3.png" alt="image" /></div>
+                                <div class="child"><img class="child-img" src="assets/4.png" alt="image" /></div>
+                                <div class="child"><img class="child-img" src="assets/5.jpg" alt="image" /></div>
+                                <div class="child"><img class="child-img" src="assets/6.jpg" alt="image" /></div>
+                                <div class="child"><img class="child-img" src="assets/7.png" alt="image" /></div>
+                                <div class="child"><img class="child-img" src="assets/8.png" alt="image" /></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Akhir Gallery -->
 
     <!-- kontak dan maps -->
     <section id="kontak">
