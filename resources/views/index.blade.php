@@ -86,14 +86,10 @@
             <h2><b>Selayang Pandang</b></h2>
         </div>
 <!-- Tabs navs -->
-<ul class="nav nav-tabs" role="tablist">
-    <li class="nav-item">
-      <a class="nav-link active" data-toggle="tab" href="#tab-1" role="tab">PAUD</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" data-toggle="tab" href="#tab-2" role="tab">SD</a>
-    </li>
-  </ul>
+<div class="nav nav-tabs" id="nav-tab" role="tablist">
+<button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#tab-1" type="button" role="tab" aria-controls="nav-home" aria-selected="true">PAUD</button>
+<button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#tab-2" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">SD</button>
+</div>
   <!-- Tabs navs -->
 
   <!-- Tabs content -->
@@ -337,6 +333,7 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript">
     var nav = document.querySelector('nav');
