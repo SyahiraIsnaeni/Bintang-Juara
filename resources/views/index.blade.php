@@ -72,13 +72,7 @@
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="{{asset('assets/gedung1.jpg')}}" class="img-fluid" alt="bg">
-        </div>
-        <div class="carousel-item active">
-          <img src="{{asset('assets/gedung2.jpg')}}" class="img-fluid" alt="bg">
-        </div>
-        <div class="carousel-item active">
-          <img src="{{asset('assets/gedung3.jpg')}}" class="img-fluid" alt="bg">
+          <img src="{{asset('assets/BintangJuara.png')}}" class="img-fluid" alt="bg">
         </div>
       </div>
     </div>
@@ -239,26 +233,26 @@
                     <div class="row mt-3 g-5">
                         <div class="col-12 col-md-6 col-lg-6">
                             <div class="video1">
-                                <div class="bintangjuaravideo">
-                                    <div class="elementor-widget-video" data-id="8b392b9" data-element_type="widget"
-                                         data-settings="{&quot;youtube_url&quot;:&quot;https:\/\/www.youtube.com\/watch?v=1GL6RJMI0S4&quot;,&quot;video_type&quot;:&quot;youtube&quot;,&quot;controls&quot;:&quot;yes&quot;,&quot;aspect_ratio&quot;:&quot;169&quot;}"
-                                         data-widget_type="video.default">
-                                        <div class="elementor-wrapper elementor-fit-aspect-ratio elementor-open-inline">
-                                            <iframe class="elementor-video" frameborder="0" allowfullscreen="1"
-                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                    title="Video Profile PAUD Islam Bintang Juara Semarang | Sekolah Calon Pemimpin Muslim | Sekolah Ramah Anak"
-                                                    width="620" height="360"
-                                                    src="https://www.youtube.com/embed/4XFlYAI_DUE"
-                                                    id="widget2"></iframe>
-                                        </div>
-                                    </div>
+                            <div class="bintangjuaravideo">
+                            <div class="elementor-widget-video" data-id="8b392b9" data-element_type="widget"
+                                 data-settings="{&quot;youtube_url&quot;:&quot;https:\/\/www.youtube.com\/watch?v=1GL6RJMI0S4&quot;,&quot;video_type&quot;:&quot;youtube&quot;,&quot;controls&quot;:&quot;yes&quot;,&quot;aspect_ratio&quot;:&quot;169&quot;}"
+                                 data-widget_type="video.default">
+                                <div class="elementor-wrapper elementor-fit-aspect-ratio elementor-open-inline">
+                                    <iframe class="responsive-iframe" frameborder="0" allowfullscreen="1"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            title="Video Profile SD Islam Bintang Juara Semarang | Sekolah Calon Pemimpin Muslim | Sekolah Ramah Anak"
+                                            width="620" height="360"
+                                            src="https://www.youtube.com/embed/1GL6RJMI0S4?controls=1&amp;rel=0&amp;playsinline=0&amp;modestbranding=0&amp;autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fsd.bintangjuara.sch.id&amp;widgetid=1"
+                                            id="widget2"></iframe>
                                 </div>
+                            </div>
+                        </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-6">
                             <div class="bintangjuaravideo">
                                 <div class="elementor-wrapper elementor-fit-aspect-ratio elementor-open-inline">
-                                    <iframe class="elementor-video" frameborder="0" allowfullscreen="1"
+                                    <iframe class="responsive-iframe" frameborder="0" allowfullscreen="1"
                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                             title="Leadership Camp PAUD Islam Bintang Juara | &quot;More Than Just Adventure&quot;" width="620"
                                             height="360"
