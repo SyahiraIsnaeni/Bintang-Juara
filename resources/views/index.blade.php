@@ -97,7 +97,7 @@
     <div class="tab-pane active" id="tab-1" role="tabpanel">
         <div class="row mt-3 g-3">
         <div class="col-12 col-md-6 col-lg-5">
-            <img src="{{asset('assets/gedung1.jpg')}}" class="img-fluid" alt="bg">
+            <img src="{{asset('assets/paud.jpg')}}" class="img-fluid" alt="bg">
         </div>
         <div class="col-12 col-md-6 col-lg-7">
             <p align="justify">PAUD ISLAM BINTANG JUARA merupakan lembaga PAUD terpadu dengan layanan pengasuhan anak (daycare). PAUD Islam Bintang Juara memiliki prinsip Pendidikan Holistik Integratif yang mengutamakan peletakkan pondasi Akidah pembiasaan Akhlakul Karimah dan Adab Islami. PAUD Islam Bintang Juara memiliki upaya optimalisasi perkembangan seluruh aspek perkembangan anak dan potensi Multiple Intelligences. PAUD Islam Bintang Juara diresmikan hari Kamis, 16 Mei 2013 di Jl. Dewi Sartika Semarang. PAUD Islam Bintang Juara didirikan oleh Ibu Dyah Indah Noviyani, S.Psi., M.Psi. beserta Dewan Pembina : Ibu Dr. Hj. Esmi Warassih, SH, MS. dan Bapak Drs. H. Abdullah Sodiq.</p>
