@@ -137,19 +137,81 @@
         <div class="container">
             <div class="row g-3">
                 <div class="col-12 col-md-6 col-lg-3">
-                    <h4 align="center">Kegiatan</h4>
+                <h4 align="center">Kegiatan</h4>
+          <div class="card">
+            <img src="assets/dummy.jpeg" class="card-img-top" alt="events">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text" align="justify">Some quick example text to build on the card title and make up the
+                bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-body">
+              <button type="button" class="btn btn-outline-secondary">Selengkapnya</button>
+            </div>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
-                    <h4 align="center">Berita</h4>
-
+                <h4 align="center">Berita</h4>
+          <div class="card">
+            <img src="assets/dummy.jpeg" class="card-img-top" alt="events">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text" align="justify">Some quick example text to build on the card title and make up the
+                bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-body">
+              <button type="button" class="btn btn-outline-secondary">Selengkapnya</button>
+            </div>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
-                    <h4 align="center">Artikel</h4>
-
+                <h4 align="center">Artikel</h4>
+          <div class="card">
+            <img src="assets/dummy.jpeg" class="card-img-top" alt="events">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text" align="justify">Some quick example text to build on the card title and make up the
+                bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-body">
+              <button type="button" class="btn btn-outline-secondary">Selengkapnya</button>
+            </div>
+                    </div>
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-3">
-                    <h4 align="center">Pengumuman</h4>
+                <h4 align="center">Pengumuman</h4>
+          <div class="card">
+            <img src="assets/dummy.jpeg" class="card-img-top" alt="events">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text" align="justify">Some quick example text to build on the card title and make up the
+                bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-body">
+              <button type="button" class="btn btn-outline-secondary">Selengkapnya</button>
+            </div>
+                    </div>
                 </div>
 
             </div>
