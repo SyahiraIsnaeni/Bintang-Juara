@@ -163,8 +163,9 @@
                                       @endif
                                   </div>
                                   <div class="col">
-                                      <a  href="#" style="text-decoration: none;">
+                                      <a  href="{{URL::to('http://paud-bintangjuara.test/detail-kegiatan/'.$row['slug'])}}" style="text-decoration: none;">
                                           <h6 class="card-title text-black" >{{$row['judul']}}</h6>
+                                          <span class="text-black" style="font-size: small">By {{$row['nama_penulis']}}</span>
                                       </a>
                                   </div>
                               </div>
@@ -172,6 +173,48 @@
                       </ul>
                   @empty
                   @endforelse
+                      @forelse ($kegiatanPaud as $row)
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">
+                                  <div class="row">
+                                      <div class="col-3 text-center text-white" style="background-color: #718096; font-family: Poppins; border-radius: 10px 10px 10px 10px">
+                                          @if (substr($row['created_at'], 5, 2) == '01')
+                                              <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>JAN</b></span>
+                                          @elseif(substr($row['created_at'], 5, 2) == '02')
+                                              <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>FEB</b></span>
+                                          @elseif(substr($row['created_at'], 5, 2) == '03')
+                                              <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>MAR</b></span>
+                                          @elseif(substr($row['created_at'], 5, 2) == '04')
+                                              <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>APR</b></span>
+                                          @elseif(substr($row['created_at'], 5, 2) == '05')
+                                              <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>MEI</b></span>
+                                          @elseif(substr($row['created_at'], 5, 2) == '06')
+                                              <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>JUN</b></span>
+                                          @elseif(substr($row['created_at'], 5, 2) == '07')
+                                              <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>JUL</b></span>
+                                          @elseif(substr($row['created_at'], 5, 2) == '08')
+                                              <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>AGU</b></span>
+                                          @elseif(substr($row['created_at'], 5, 2) == '09')
+                                              <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>SEP</b></span>
+                                          @elseif(substr($row['created_at'], 5, 2) == '10')
+                                              <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>OKT</b></span>
+                                          @elseif(substr($row['created_at'], 5, 2) == '11')
+                                              <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>NOV</b></span>
+                                          @elseif(substr($row['created_at'], 5, 2) == '12')
+                                              <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>DES</b></span>
+                                          @endif
+                                      </div>
+                                      <div class="col">
+                                          <a  href="{{URL::to('http://paud-bintangjuara.test/detail-kegiatan/'.$row['slug'])}}" style="text-decoration: none;">
+                                              <h6 class="card-title text-black" >{{$row['judul']}}</h6>
+                                              <span class="text-black" style="font-size: small">By {{$row['nama_penulis']}}</span>
+                                          </a>
+                                      </div>
+                                  </div>
+                              </li>
+                          </ul>
+                      @empty
+                      @endforelse
                   <div class="card-body">
                       <a class="text-blue mt-3" href="http://sd.bintangjuara.sch.id/daftar-kegiatan">
                           <b>Selengkapnya SD</b>
@@ -219,8 +262,9 @@
                                       @endif
                                   </div>
                                   <div class="col">
-                                      <a  href="#" style="text-decoration: none;">
+                                      <a  href="{{URL::to('http://paud-bintangjuara.test/detail-berita/'.$row['slug'])}}" style="text-decoration: none;">
                                           <h6 class="card-title text-black" >{{$row['judul']}}</h6>
+                                          <span class="text-black" style="font-size: small">By {{$row['nama_penulis']}}</span>
                                       </a>
                                   </div>
                               </div>
@@ -228,6 +272,48 @@
                       </ul>
                   @empty
                   @endforelse
+                      @forelse ($beritaPaud as $row)
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">
+                                  <div class="row">
+                                      <div class="col-3 text-center text-white" style="background-color: #718096; font-family: Poppins; border-radius: 10px 10px 10px 10px">
+                                          @if (substr($row['created_at'], 5, 2) == '01')
+                                              <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>JAN</b></span>
+                                          @elseif(substr($row['created_at'], 5, 2) == '02')
+                                              <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>FEB</b></span>
+                                          @elseif(substr($row['created_at'], 5, 2) == '03')
+                                              <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>MAR</b></span>
+                                          @elseif(substr($row['created_at'], 5, 2) == '04')
+                                              <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>APR</b></span>
+                                          @elseif(substr($row['created_at'], 5, 2) == '05')
+                                              <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>MEI</b></span>
+                                          @elseif(substr($row['created_at'], 5, 2) == '06')
+                                              <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>JUN</b></span>
+                                          @elseif(substr($row['created_at'], 5, 2) == '07')
+                                              <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>JUL</b></span>
+                                          @elseif(substr($row['created_at'], 5, 2) == '08')
+                                              <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>AGU</b></span>
+                                          @elseif(substr($row['created_at'], 5, 2) == '09')
+                                              <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>SEP</b></span>
+                                          @elseif(substr($row['created_at'], 5, 2) == '10')
+                                              <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>OKT</b></span>
+                                          @elseif(substr($row['created_at'], 5, 2) == '11')
+                                              <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>NOV</b></span>
+                                          @elseif(substr($row['created_at'], 5, 2) == '12')
+                                              <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>DES</b></span>
+                                          @endif
+                                      </div>
+                                      <div class="col">
+                                          <a  href="{{URL::to('http://paud-bintangjuara.test/detail-berita/'.$row['slug'])}}" style="text-decoration: none;">
+                                              <h6 class="card-title text-black" >{{$row['judul']}}</h6>
+                                              <span class="text-black" style="font-size: small">By {{$row['nama_penulis']}}</span>
+                                          </a>
+                                      </div>
+                                  </div>
+                              </li>
+                          </ul>
+                      @empty
+                      @endforelse
                   <div class="card-body">
                       <a class="text-blue mt-3" href="http://sd.bintangjuara.sch.id/daftar-berita">
                           <b>Selengkapnya SD</b>
@@ -274,8 +360,9 @@
                                   @endif
                               </div>
                               <div class="col">
-                                  <a  href="#" style="text-decoration: none;">
+                                  <a  href="{{URL::to('http://paud-bintangjuara.test/detail-artikel/'.$row['slug'])}}" style="text-decoration: none;">
                                       <h6 class="card-title text-black" >{{$row['judul']}}</h6>
+                                      <span class="text-black" style="font-size: small">By {{$row['nama_penulis']}}</span>
                                   </a>
                               </div>
                               </div>
@@ -283,6 +370,48 @@
                       </ul>
                   @empty
                   @endforelse
+                      @forelse ($artikelPaud as $row)
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">
+                                  <div class="row">
+                                      <div class="col-3 text-center text-white" style="background-color: #718096; font-family: Poppins; border-radius: 10px 10px 10px 10px">
+                                          @if (substr($row['created_at'], 5, 2) == '01')
+                                              <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>JAN</b></span>
+                                          @elseif(substr($row['created_at'], 5, 2) == '02')
+                                              <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>FEB</b></span>
+                                          @elseif(substr($row['created_at'], 5, 2) == '03')
+                                              <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>MAR</b></span>
+                                          @elseif(substr($row['created_at'], 5, 2) == '04')
+                                              <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>APR</b></span>
+                                          @elseif(substr($row['created_at'], 5, 2) == '05')
+                                              <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>MEI</b></span>
+                                          @elseif(substr($row['created_at'], 5, 2) == '06')
+                                              <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>JUN</b></span>
+                                          @elseif(substr($row['created_at'], 5, 2) == '07')
+                                              <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>JUL</b></span>
+                                          @elseif(substr($row['created_at'], 5, 2) == '08')
+                                              <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>AGU</b></span>
+                                          @elseif(substr($row['created_at'], 5, 2) == '09')
+                                              <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>SEP</b></span>
+                                          @elseif(substr($row['created_at'], 5, 2) == '10')
+                                              <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>OKT</b></span>
+                                          @elseif(substr($row['created_at'], 5, 2) == '11')
+                                              <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>NOV</b></span>
+                                          @elseif(substr($row['created_at'], 5, 2) == '12')
+                                              <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>DES</b></span>
+                                          @endif
+                                      </div>
+                                      <div class="col">
+                                          <a  href="{{URL::to('http://paud-bintangjuara.test/detail-artikel/'.$row['slug'])}}" style="text-decoration: none;">
+                                              <h6 class="card-title text-black" >{{$row['judul']}}</h6>
+                                              <span class="text-black" style="font-size: small">By {{$row['nama_penulis']}}</span>
+                                          </a>
+                                      </div>
+                                  </div>
+                              </li>
+                          </ul>
+                      @empty
+                      @endforelse
                   <div class="card-body">
                       <a class="text-blue mt-3" href="http://sd.bintangjuara.sch.id/daftar-artikel">
                           <b>Selengkapnya SD</b>
@@ -331,8 +460,9 @@
                                             @endif
                                         </div>
                                         <div class="col">
-                                            <a  href="{{route('detail-pengumuman', $row['slug'])}}" style="text-decoration: none;">
+                                            <a  href="{{URL::to('http://paud-bintangjuara.test/detail-pengumuman/'.$row['slug'])}}" style="text-decoration: none;">
                                                 <h6 class="card-title text-black" >{{$row['judul']}}</h6>
+                                                <span class="text-black" style="font-size: small">By {{$row['nama_penulis']}}</span>
                                             </a>
                                         </div>
                                     </div>
@@ -340,6 +470,48 @@
                             </ul>
                         @empty
                         @endforelse
+                            @forelse ($pengumumanPaud as $row)
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-3 text-center text-white" style="background-color: #718096; font-family: Poppins; border-radius: 10px 10px 10px 10px">
+                                                @if (substr($row['created_at'], 5, 2) == '01')
+                                                    <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>JAN</b></span>
+                                                @elseif(substr($row['created_at'], 5, 2) == '02')
+                                                    <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>FEB</b></span>
+                                                @elseif(substr($row['created_at'], 5, 2) == '03')
+                                                    <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>MAR</b></span>
+                                                @elseif(substr($row['created_at'], 5, 2) == '04')
+                                                    <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>APR</b></span>
+                                                @elseif(substr($row['created_at'], 5, 2) == '05')
+                                                    <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>MEI</b></span>
+                                                @elseif(substr($row['created_at'], 5, 2) == '06')
+                                                    <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>JUN</b></span>
+                                                @elseif(substr($row['created_at'], 5, 2) == '07')
+                                                    <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>JUL</b></span>
+                                                @elseif(substr($row['created_at'], 5, 2) == '08')
+                                                    <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>AGU</b></span>
+                                                @elseif(substr($row['created_at'], 5, 2) == '09')
+                                                    <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>SEP</b></span>
+                                                @elseif(substr($row['created_at'], 5, 2) == '10')
+                                                    <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>OKT</b></span>
+                                                @elseif(substr($row['created_at'], 5, 2) == '11')
+                                                    <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>NOV</b></span>
+                                                @elseif(substr($row['created_at'], 5, 2) == '12')
+                                                    <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>DES</b></span>
+                                                @endif
+                                            </div>
+                                            <div class="col">
+                                                <a  href="{{URL::to('http://paud-bintangjuara.test/detail-pengumuman/'.$row['slug'])}}" style="text-decoration: none;">
+                                                    <h6 class="card-title text-black" >{{$row['judul']}}</h6>
+                                                    <span class="text-black" style="font-size: small">By {{$row['nama_penulis']}}</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            @empty
+                            @endforelse
                         <div class="card-body">
                             <a class="text-blue mt-3" href="http://sd.bintangjuara.sch.id/daftar-pengumuman">
                                 <b>Selengkapnya SD</b>

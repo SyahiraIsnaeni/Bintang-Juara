@@ -13,21 +13,21 @@ class IndexController extends Controller
         $responseKegiatanPaud = Http::get('http://paud-bintangjuara.test/api/post-kegiatan-paud');
         $responseArtikelPaud = Http::get('http://paud-bintangjuara.test/api/post-artikel-paud');
         $responseBeritaPaud = Http::get('http://paud-bintangjuara.test/api/post-berita-paud');
+        $responseBeritaSD = Http::get('http://paud-bintangjuara.test/api/post-berita-paud');
+        $responsePengumumanSD = Http::get('http://paud-bintangjuara.test/api/post-pengumuman-paud');
+        $responseArtikelSD = Http::get('http://paud-bintangjuara.test/api/post-artikel-paud');
+        $responseKegiatanSD = Http::get('http://paud-bintangjuara.test/api/post-kegiatan-paud');
 
         $pengumumanPaud = $responsePengumumanPaud->json();
         $artikelPaud = $responseArtikelPaud->json();
         $kegiatanPaud = $responseKegiatanPaud->json();
         $beritaPaud = $responseBeritaPaud->json();
+        $pengumumanSD = $responsePengumumanSD->json();
+        $artikelSD = $responseArtikelSD->json();
+        $kegiatanSD = $responseKegiatanSD->json();
+        $beritaSD = $responseBeritaSD->json();
         return view('index', compact('pengumumanPaud', 'artikelPaud',
-        'kegiatanPaud', 'beritaPaud'));
-    }
-
-    public function show($slug){
-        $responseDetailPengumumanPaud = Http::get('http://paud-bintangjuara.test/api/post-pengumuman-detail-paud/', ['slug' => $slug]);
-
-        $detailPengumumanPaud = $responseDetailPengumumanPaud->successful();
-        dd($detailPengumumanPaud);
-        return view('pengumuman', compact('detailPengumumanPaud'));
+        'kegiatanPaud', 'beritaPaud', 'pengumumanSD', 'artikelSD', 'beritaSD', 'kegiatanSD'));
     }
 
 }
