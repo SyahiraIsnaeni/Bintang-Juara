@@ -135,7 +135,7 @@
                       <ul class="list-group list-group-flush">
                           <li class="list-group-item">
                               <div class="row">
-                                  <div class="col-3 text-center text-white" style="background-color: #718096; font-family: Poppins; border-radius: 10px 10px 10px 10px">
+                                  <div class="col-3 text-center text-white" style="background-color: #718096; font-family: Poppins; border-radius: 10px 10px 10px 10px; width: 75px; height: 80px; padding: 10px">
                                       @if (substr($row['created_at'], 5, 2) == '01')
                                           <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>JAN</b></span>
                                       @elseif(substr($row['created_at'], 5, 2) == '02')
@@ -163,7 +163,7 @@
                                       @endif
                                   </div>
                                   <div class="col">
-                                      <a  href="{{URL::to('http://paud-bintangjuara.test/detail-kegiatan/'.$row['slug'])}}" style="text-decoration: none;">
+                                      <a  href="{{URL::to('http://paud.bintangjuara.sch.id/detail-kegiatan/'.$row['slug'])}}" style="text-decoration: none;">
                                           <h6 class="card-title text-black" >{{$row['judul']}}</h6>
                                           <span class="text-black" style="font-size: small">By {{$row['nama_penulis']}}</span>
                                       </a>
@@ -173,11 +173,11 @@
                       </ul>
                   @empty
                   @endforelse
-                      @forelse ($kegiatanPaud as $row)
+                      @forelse ($kegiatanSD as $row)
                           <ul class="list-group list-group-flush">
                               <li class="list-group-item">
                                   <div class="row">
-                                      <div class="col-3 text-center text-white" style="background-color: #718096; font-family: Poppins; border-radius: 10px 10px 10px 10px">
+                                      <div class="col-3 text-center text-white" style="background-color: #718096; font-family: Poppins; border-radius: 10px 10px 10px 10px; width: 75px; height: 80px; padding: 10px">
                                           @if (substr($row['created_at'], 5, 2) == '01')
                                               <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>JAN</b></span>
                                           @elseif(substr($row['created_at'], 5, 2) == '02')
@@ -205,7 +205,7 @@
                                           @endif
                                       </div>
                                       <div class="col">
-                                          <a  href="{{URL::to('http://paud-bintangjuara.test/detail-kegiatan/'.$row['slug'])}}" style="text-decoration: none;">
+                                          <a  href="{{URL::to('http://sd.bintangjuara.sch.id/detail-kegiatan/'.$row['slug'])}}" style="text-decoration: none;">
                                               <h6 class="card-title text-black" >{{$row['judul']}}</h6>
                                               <span class="text-black" style="font-size: small">By {{$row['nama_penulis']}}</span>
                                           </a>
@@ -234,7 +234,8 @@
                       <ul class="list-group list-group-flush">
                           <li class="list-group-item">
                               <div class="row">
-                                  <div class="col-3 text-center text-white" style="background-color: #718096; font-family: Poppins; border-radius: 10px 10px 10px 10px">
+                              <div class="row">
+                                  <div class="col-3 text-center text-white" style="background-color: #718096; font-family: Poppins; border-radius: 10px 10px 10px 10px; width: 75px; height: 80px; padding: 10px">
                                       @if (substr($row['created_at'], 5, 2) == '01')
                                           <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>JAN</b></span>
                                       @elseif(substr($row['created_at'], 5, 2) == '02')
@@ -262,21 +263,22 @@
                                       @endif
                                   </div>
                                   <div class="col">
-                                      <a  href="{{URL::to('http://paud-bintangjuara.test/detail-berita/'.$row['slug'])}}" style="text-decoration: none;">
+                                      <a  href="{{URL::to('http://paud.bintangjuara.sch.id/detail-berita/'.$row['slug'])}}" style="text-decoration: none;">
                                           <h6 class="card-title text-black" >{{$row['judul']}}</h6>
                                           <span class="text-black" style="font-size: small">By {{$row['nama_penulis']}}</span>
                                       </a>
                                   </div>
                               </div>
+                              </div>
                           </li>
                       </ul>
                   @empty
                   @endforelse
-                      @forelse ($beritaPaud as $row)
+                      @forelse ($beritaSD as $row)
                           <ul class="list-group list-group-flush">
                               <li class="list-group-item">
                                   <div class="row">
-                                      <div class="col-3 text-center text-white" style="background-color: #718096; font-family: Poppins; border-radius: 10px 10px 10px 10px">
+                                      <div class="col-3 text-center text-white" style="background-color: #718096; font-family: Poppins; border-radius: 10px 10px 10px 10px; width: 75px; height: 80px; padding: 10px">
                                           @if (substr($row['created_at'], 5, 2) == '01')
                                               <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>JAN</b></span>
                                           @elseif(substr($row['created_at'], 5, 2) == '02')
@@ -304,7 +306,7 @@
                                           @endif
                                       </div>
                                       <div class="col">
-                                          <a  href="{{URL::to('http://paud-bintangjuara.test/detail-berita/'.$row['slug'])}}" style="text-decoration: none;">
+                                          <a  href="{{URL::to('http://sd.bintangjuara.sch.id/detail-berita/'.$row['slug'])}}" style="text-decoration: none;">
                                               <h6 class="card-title text-black" >{{$row['judul']}}</h6>
                                               <span class="text-black" style="font-size: small">By {{$row['nama_penulis']}}</span>
                                           </a>
@@ -332,7 +334,7 @@
                       <ul class="list-group list-group-flush">
                           <li class="list-group-item">
                               <div class="row">
-                              <div class="col-3 text-center text-white" style="background-color: #718096; font-family: Poppins; border-radius: 10px 10px 10px 10px">
+                              <div class="col-3 text-center text-white" style="background-color: #718096; font-family: Poppins; border-radius: 10px 10px 10px 10px; width: 75px; height: 80px; padding: 10px">
                                   @if (substr($row['created_at'], 5, 2) == '01')
                                       <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>JAN</b></span>
                                   @elseif(substr($row['created_at'], 5, 2) == '02')
@@ -360,7 +362,7 @@
                                   @endif
                               </div>
                               <div class="col">
-                                  <a  href="{{URL::to('http://paud-bintangjuara.test/detail-artikel/'.$row['slug'])}}" style="text-decoration: none;">
+                                  <a  href="{{URL::to('http://paud.bintangjuara.sch.id/detail-artikel/'.$row['slug'])}}" style="text-decoration: none;">
                                       <h6 class="card-title text-black" >{{$row['judul']}}</h6>
                                       <span class="text-black" style="font-size: small">By {{$row['nama_penulis']}}</span>
                                   </a>
@@ -370,11 +372,11 @@
                       </ul>
                   @empty
                   @endforelse
-                      @forelse ($artikelPaud as $row)
+                      @forelse ($artikelSD as $row)
                           <ul class="list-group list-group-flush">
                               <li class="list-group-item">
                                   <div class="row">
-                                      <div class="col-3 text-center text-white" style="background-color: #718096; font-family: Poppins; border-radius: 10px 10px 10px 10px">
+                                      <div class="col-3 text-center text-white" style="background-color: #718096; font-family: Poppins; border-radius: 10px 10px 10px 10px; width: 75px; height: 80px; padding: 10px">
                                           @if (substr($row['created_at'], 5, 2) == '01')
                                               <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>JAN</b></span>
                                           @elseif(substr($row['created_at'], 5, 2) == '02')
@@ -402,7 +404,7 @@
                                           @endif
                                       </div>
                                       <div class="col">
-                                          <a  href="{{URL::to('http://paud-bintangjuara.test/detail-artikel/'.$row['slug'])}}" style="text-decoration: none;">
+                                          <a  href="{{URL::to('http://sd.bintangjuara.sch.id/detail-artikel/'.$row['slug'])}}" style="text-decoration: none;">
                                               <h6 class="card-title text-black" >{{$row['judul']}}</h6>
                                               <span class="text-black" style="font-size: small">By {{$row['nama_penulis']}}</span>
                                           </a>
@@ -432,7 +434,7 @@
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
                                     <div class="row">
-                                        <div class="col-3 text-center text-white" style="background-color: #718096; font-family: Poppins; border-radius: 10px 10px 10px 10px">
+                                        <div class="col-3 text-center text-white" style="background-color: #718096; font-family: Poppins; border-radius: 10px 10px 10px 10px; width: 75px; height: 80px; padding: 10px">
                                             @if (substr($row['created_at'], 5, 2) == '01')
                                                 <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>JAN</b></span>
                                             @elseif(substr($row['created_at'], 5, 2) == '02')
@@ -460,7 +462,7 @@
                                             @endif
                                         </div>
                                         <div class="col">
-                                            <a  href="{{URL::to('http://paud-bintangjuara.test/detail-pengumuman/'.$row['slug'])}}" style="text-decoration: none;">
+                                            <a  href="{{URL::to('http://paud.bintangjuara.sch.id/detail-pengumuman/'.$row['slug'])}}" style="text-decoration: none;">
                                                 <h6 class="card-title text-black" >{{$row['judul']}}</h6>
                                                 <span class="text-black" style="font-size: small">By {{$row['nama_penulis']}}</span>
                                             </a>
@@ -470,11 +472,11 @@
                             </ul>
                         @empty
                         @endforelse
-                            @forelse ($pengumumanPaud as $row)
+                            @forelse ($pengumumanSD as $row)
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">
                                         <div class="row">
-                                            <div class="col-3 text-center text-white" style="background-color: #718096; font-family: Poppins; border-radius: 10px 10px 10px 10px">
+                                            <div class="col-3 text-center text-white" style="background-color: #718096; font-family: Poppins; border-radius: 10px 10px 10px 10px; width: 75px; height: 80px; padding: 10px">
                                                 @if (substr($row['created_at'], 5, 2) == '01')
                                                     <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>JAN</b></span>
                                                 @elseif(substr($row['created_at'], 5, 2) == '02')
@@ -502,7 +504,7 @@
                                                 @endif
                                             </div>
                                             <div class="col">
-                                                <a  href="{{URL::to('http://paud-bintangjuara.test/detail-pengumuman/'.$row['slug'])}}" style="text-decoration: none;">
+                                                <a  href="{{URL::to('http://sd.bintangjuara.sch.id/detail-pengumuman/'.$row['slug'])}}" style="text-decoration: none;">
                                                     <h6 class="card-title text-black" >{{$row['judul']}}</h6>
                                                     <span class="text-black" style="font-size: small">By {{$row['nama_penulis']}}</span>
                                                 </a>
@@ -601,9 +603,9 @@
 
                             <div class="cover">
                             <div class="scroll-images">
-                                <div class="child"><img class="child-img" src="assets/1.png" alt="image" /></div>
                                 <div class="child"><img class="child-img" src="assets/2.png" alt="image" /></div>
                                 <div class="child"><img class="child-img" src="assets/3.png" alt="image" /></div>
+                                <div class="child"><img class="child-img" src="assets/1.png" alt="image" /></div>
                                 <div class="child"><img class="child-img" src="assets/4.png" alt="image" /></div>
                                 <div class="child"><img class="child-img" src="assets/5.jpg" alt="image" /></div>
                                 <div class="child"><img class="child-img" src="assets/6.jpg" alt="image" /></div>

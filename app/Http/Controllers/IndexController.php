@@ -9,14 +9,14 @@ class IndexController extends Controller
 {
 
     public function index(){
-        $responsePengumumanPaud = Http::get('http://paud-bintangjuara.test/api/post-pengumuman-paud');
-        $responseKegiatanPaud = Http::get('http://paud-bintangjuara.test/api/post-kegiatan-paud');
-        $responseArtikelPaud = Http::get('http://paud-bintangjuara.test/api/post-artikel-paud');
-        $responseBeritaPaud = Http::get('http://paud-bintangjuara.test/api/post-berita-paud');
-        $responseBeritaSD = Http::get('http://paud-bintangjuara.test/api/post-berita-paud');
-        $responsePengumumanSD = Http::get('http://paud-bintangjuara.test/api/post-pengumuman-paud');
-        $responseArtikelSD = Http::get('http://paud-bintangjuara.test/api/post-artikel-paud');
-        $responseKegiatanSD = Http::get('http://paud-bintangjuara.test/api/post-kegiatan-paud');
+        $responsePengumumanPaud = Http::get('http://paud.bintangjuara.sch.id/api/post-pengumuman-paud');
+        $responseKegiatanPaud = Http::get('http://paud.bintangjuara.sch.id/api/post-kegiatan-paud');
+        $responseArtikelPaud = Http::get('http://paud.bintangjuara.sch.id/api/post-artikel-paud');
+        $responseBeritaPaud = Http::get('http://paud.bintangjuara.sch.id/api/post-berita-paud');
+        $responseBeritaSD = Http::get('http://sd.bintangjuara.sch.id/api/post-berita');
+        $responsePengumumanSD = Http::get('http://sd.bintangjuara.sch.id/api/post-pengumuman');
+        $responseArtikelSD = Http::get('http://sd.bintangjuara.sch.id/api/post-artikel');
+        $responseKegiatanSD = Http::get('http://sd.bintangjuara.sch.id/api/post-kegiatan');
 
         $pengumumanPaud = $responsePengumumanPaud->json();
         $artikelPaud = $responseArtikelPaud->json();
